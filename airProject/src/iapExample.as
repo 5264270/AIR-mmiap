@@ -11,11 +11,11 @@ package
 	public class iapExample extends Sprite
 	{
 		//应用编码
-		private var appID:String = "300002803355";
+		private var appID:String = "000000000000";
 		//app key
-		private var appKey:String = "250F835C28E0CE43";
+		private var appKey:String = "000000000000";
 		//计费点代码 
-		private var paycode:String = "30000280335501";
+		private var paycode:String = "000000000000";
 		
 		public function iapExample()
 		{
