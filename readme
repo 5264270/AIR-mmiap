@@ -1,0 +1,32 @@
+USE mmiap in AIR Project
+
+1. code your java code, then zip all classed width mmbilling.jar to one jar file(class file only)
+
+2. package your ane, attention widht .so files in lib dirctory.
+
+3. import ane to AIR project, copy assets/mmiap(in mmbilling.jar) to src
+
+4. package air to apk
+
+5. aapt CopyrightDeclaration.xml, mmiap.xml, VERSION files to apk
+
+6. resign apk file
+
+
+Directories:
+
+ane: package ane.
+airProject: air project use ane
+tools: for resign apk files.
+
+javaCode:
+
+	public void init(String appId, String appKey){
+		purchase.setAppInfo(appId, appKey);
+		purchase.init(activity, iapListener);
+	}
+
+asCode:
+
+	MMExtensionContext.instance.monetization.init(appID, appKey);
+	MMExtensionContext.instance.monetization.startPayment(paycode);
